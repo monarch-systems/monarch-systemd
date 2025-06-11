@@ -42,6 +42,9 @@ declare -a SYSTEMD_DEPS=(
     "pkg-config"
     "gcc"
     "make"
+    "libcap-devel"
+    "gperf"
+    "pam-devel"
 )
 
 # display error messages and exit
