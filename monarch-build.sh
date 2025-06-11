@@ -124,7 +124,7 @@ fi
 echo -e "\n\033[0;32m[*] Configuring systemd build with Meson...\033[0m"
 # We explicitly set --prefix=/usr so that files are laid out correctly
 # when DESTDIR is applied during installation.
-meson build --prefix=/usr -Dpam=enabled -Dmount-util=enabled -Ddefault-hierarchy=hybrid -Dsystemd-udevd=enabled -Dlogind=enabled || die "Meson configuration failed."
+meson build --prefix=/usr -Dpam=enabled -Dlogind=enabled || die "Meson configuration failed."
 echo -e "\033[0;32m[*] Meson configuration successful.\033[0m"
 
 # 5. Compile with Ninja
